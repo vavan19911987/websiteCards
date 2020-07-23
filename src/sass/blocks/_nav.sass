@@ -1,0 +1,179 @@
+.nav
+    background: linear-gradient(#ffe6e6ee, #ffcccc)
+    padding: 10px
+    &__content
+        display: flex
+        justify-content: space-around
+        align-items: center
+
+    &__logo
+        font-size: 35px
+        letter-spacing: 5px
+        font-weight: 600
+        color: #ff9999
+        // animation: rotead 4s infinite ease-in-out
+        +Great
+
+        &:hover
+            cursor: pointer
+.animation
+    animation: rotead 2s ease-in-out
+
+
+.contakts
+    display: flex
+    align-items: center
+    margin-left: 20px
+    &__address
+        letter-spacing: 4px
+        padding-right: 30px
+        font-size: 18px
+        color: #fd7979d0
+        +Pacifico
+    &__phone
+        letter-spacing: 3px
+        font-size: 22px
+        margin-left: 20px
+        color: #fd7979d0
+        +Pacifico           
+
+    
+        
+
+.link
+    padding-left: 50px
+    text-transform: uppercase
+    letter-spacing: 5px
+    color: #ff9999e7
+    transition: all .2s linear
+    +Pacifico
+
+
+
+
+        
+
+
+// Бургер //
+.menu-link
+    display: none
+
+
+.menu-link 
+    position: absolute
+    right: 20px
+    top: 2px
+    background-color: #ff8f8f65
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, .3)
+.menu-link span 
+    position: absolute
+    width: 20px
+    height: 2px
+    background-color: #b15353
+    top: 50%
+    left: 50%
+    margin-top: -.9px
+    margin-left: -10px
+
+.menu-link span:nth-child(1) 
+    transform: translateY(-6px)
+
+.menu-link span:nth-child(3) 
+    transform: translateY(6px)
+
+.menu-link:hover 
+    cursor: pointer
+
+// menu 
+// 	position: fixed
+// 	background-color: #ff999960
+// 	right: 0
+// 	margin-top: 10px
+// 	top: 50px
+// 	z-index: 99
+// 	display: flex
+// 	align-items: center
+// 	justify-content: center
+// 	transform: translateX(100%)
+// menu .link 
+//     padding: 10px
+// .active-menu 
+// 	transform: translateX(-150%)
+.close-btn 
+    position: fixed
+    top: 30px
+    right: 30px
+    font-size: 3rem
+    transition: all 0.2s
+    transform-origin: 50% 53%
+    display: block
+    line-height: 3rem
+    text-align: center
+    width: 3rem
+    height: 3rem
+
+.close-btn:hover 
+    transform: rotate(180deg)
+   
+    
+
+
+    
+    
+.link-active  
+    text-shadow: 3px 5px 6px #ff8585e7, -3px -3px 4px #fd696960
+
+
+
+@media (max-width: 1200px)
+    .link
+        padding-left: 30px
+    .contakts
+        &__phone
+            display: none    
+
+        
+
+    
+// @media (max-width: 960px)
+
+@media (max-width: 768px)
+    .nav
+        &__menu a:nth-last-child(2)
+            display: none
+    .link
+        padding-left: 10px        
+            
+
+@media (max-width: 576px)
+    .link
+        &__menu a
+            display: none
+    .menu-link
+        display: inline  
+
+@media (max-width: 450px)
+    .contakts
+
+        &__address
+            display: none
+    menu 
+        position: fixed
+        background-color: #ff999960
+        right: 0
+        margin-top: 10px
+        top: 50px
+        z-index: 99
+        display: flex
+        align-items: center
+        justify-content: center
+        transform: translateX(%)
+    menu .link 
+        padding: 10px
+        font-size: 15px
+    .active-menu 
+        transform: translateX(%)
+    
