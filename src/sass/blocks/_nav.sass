@@ -91,7 +91,7 @@ menu
 	// width: 60%
 	// height: 100px
 	background-color: #ff99993b
-	right: 0
+	right: -10px
 	margin: 0
 	top: 55px
 	// z-index: 99
@@ -110,6 +110,10 @@ menu
 
 .menu-links a.link
     padding: 20px
+.menu-links a.link:last-child
+    font-size: 20px
+    color: #fd7979d0  
+
 
 .active-menu 
 	transform: translateX(-5%)
@@ -152,8 +156,12 @@ menu a
         &__menu a:nth-last-child(2)
             display: none
     .link
-        padding-left: 10px        
-            
+        padding-left: 10px
+    .animation
+        animation: none     
+    .link-active
+        text-shadow: none
+                
 
 @media (max-width: 576px)
     .nav 

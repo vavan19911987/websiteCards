@@ -273,7 +273,7 @@ body {
 menu {
   position: fixed;
   background-color: #ff99993b;
-  right: 0;
+  right: -10px;
   margin: 0;
   top: 55px;
   display: -webkit-box;
@@ -308,6 +308,11 @@ menu {
 
 .menu-links a.link {
   padding: 20px;
+}
+
+.menu-links a.link:last-child {
+  font-size: 20px;
+  color: #fd7979d0;
 }
 
 .active-menu {
@@ -355,6 +360,13 @@ menu a {
   }
   .link {
     padding-left: 10px;
+  }
+  .animation {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .link-active {
+    text-shadow: none;
   }
 }
 
