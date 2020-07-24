@@ -11,7 +11,7 @@
         font-size: 35px
         letter-spacing: 5px
         font-weight: 600
-        color: #ff9999
+        color: $color-logo
         +Great
 
         &:hover
@@ -28,20 +28,20 @@
         letter-spacing: 4px
         padding-right: 30px
         font-size: 18px
-        color: #fd7979d0
+        color: $color-link
         +Pacifico
     &__phone
         letter-spacing: 3px
         font-size: 22px
         margin-left: 20px
-        color: #fd7979d0
+        color: $color-link
         +Pacifico           
 
 .link
     padding-left: 50px
     text-transform: uppercase
     letter-spacing: 5px
-    color: #ff9999e7
+    color: $color-link
     transition: all .2s linear
     +Pacifico
 .link-active  
@@ -71,7 +71,7 @@
 	position: absolute
 	width: 20px
 	height: 2px
-	background-color: #ff9999e7
+	background-color: $color-link
 	top: 50%
 	left: 50%
 	margin-top: -1px
@@ -88,13 +88,11 @@
 
 menu 
 	position: fixed
-	// width: 60%
-	// height: 100px
-	background-color: #ff99993b
+	background-color: $color-menu-activ
 	right: -10px
 	margin: 0
 	top: 55px
-	// z-index: 99
+	z-index: 99
 	display: flex
 	align-items: center
 	justify-content: center
@@ -112,13 +110,13 @@ menu
     padding: 20px
 .menu-links a.link:last-child
     font-size: 20px
-    color: #fd7979d0  
+    color: $color-link 
 
 
 .active-menu 
 	transform: translateX(-5%)
 menu a
-    color: #fd7979d0
+    color: $color-link
 
 .close-btn 
 	position: absolute
