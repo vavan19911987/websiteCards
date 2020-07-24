@@ -1,3 +1,4 @@
+*
 .nav
     background: linear-gradient(#ffe6e6ee, #ffcccc)
     padding: 10px
@@ -11,7 +12,6 @@
         letter-spacing: 5px
         font-weight: 600
         color: #ff9999
-        // animation: rotead 4s infinite ease-in-out
         +Great
 
         &:hover
@@ -37,9 +37,6 @@
         color: #fd7979d0
         +Pacifico           
 
-    
-        
-
 .link
     padding-left: 50px
     text-transform: uppercase
@@ -47,6 +44,8 @@
     color: #ff9999e7
     transition: all .2s linear
     +Pacifico
+.link-active  
+    text-shadow: 3px 5px 6px #ff8585e7, -3px -3px 4px #fd696960
 
 
 
@@ -55,91 +54,99 @@
 
 
 // Бургер //
-.menu-link
-    display: none
-
 
 .menu-link 
-    position: absolute
-    right: 20px
-    top: 2px
-    background-color: #ff8f8f65
-    width: 50px
-    height: 50px
-    border-radius: 50%
-    box-shadow: 5px 5px 10px rgba(255, 255, 255, .3)
+	position: fixed
+	right: 20px
+	top: 2px
+	background-color: #fff
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	box-shadow: 1px 1px 10px rgba(255, 255, 255, .3)
+.menu-link
+    display: none    
+
 .menu-link span 
-    position: absolute
-    width: 20px
-    height: 2px
-    background-color: #b15353
-    top: 50%
-    left: 50%
-    margin-top: -.9px
-    margin-left: -10px
+	position: absolute
+	width: 20px
+	height: 2px
+	background-color: #ff9999e7
+	top: 50%
+	left: 50%
+	margin-top: -1px
+	margin-left: -10px
 
 .menu-link span:nth-child(1) 
-    transform: translateY(-6px)
+	transform: translateY(-6px)
 
 .menu-link span:nth-child(3) 
-    transform: translateY(6px)
+	transform: translateY(6px)
 
 .menu-link:hover 
-    cursor: pointer
+	cursor: pointer
 
-// menu 
-// 	position: fixed
-// 	background-color: #ff999960
-// 	right: 0
-// 	margin-top: 10px
-// 	top: 50px
-// 	z-index: 99
-// 	display: flex
-// 	align-items: center
-// 	justify-content: center
-// 	transform: translateX(100%)
-// menu .link 
-//     padding: 10px
-// .active-menu 
-// 	transform: translateX(-150%)
+menu 
+	position: fixed
+	// width: 60%
+	// height: 100px
+	background-color: #ff99993b
+	right: 0
+	margin: 0
+	top: 55px
+	// z-index: 99
+	display: flex
+	align-items: center
+	justify-content: center
+	transform: translateX(120%)
+.menu
+    border-radius: 10px    
+    transition: 1.5s
+
+.menu-links
+    display: flex
+    flex-direction: column
+    margin: 20px
+
+.menu-links a.link
+    padding: 20px
+
+.active-menu 
+	transform: translateX(-5%)
+menu a
+    color: #fd7979d0
+
 .close-btn 
-    position: fixed
-    top: 30px
-    right: 30px
-    font-size: 3rem
-    transition: all 0.2s
-    transform-origin: 50% 53%
-    display: block
-    line-height: 3rem
-    text-align: center
-    width: 3rem
-    height: 3rem
+	position: absolute
+	top: 5px
+	right: 10px
+	font-size: 3rem
+	transition: all 0.2s
+	transform-origin: 50% 53%
+	display: block
+	line-height: 3rem
+	text-align: center
+	width: 3rem
+	height: 3rem
 
 .close-btn:hover 
-    transform: rotate(180deg)
-   
-    
-
+	transform: rotate(180deg)
 
     
-    
-.link-active  
-    text-shadow: 3px 5px 6px #ff8585e7, -3px -3px 4px #fd696960
 
 
+
+
+// @media //    
 
 @media (max-width: 1200px)
     .link
         padding-left: 30px
     .contakts
         &__phone
-            display: none    
-
-        
+            display: none          
 
     
-// @media (max-width: 960px)
-
 @media (max-width: 768px)
     .nav
         &__menu a:nth-last-child(2)
@@ -149,31 +156,16 @@
             
 
 @media (max-width: 576px)
-    .link
-        &__menu a
+    .nav 
+        &__menu 
             display: none
     .menu-link
-        display: inline  
+        display: inline
 
 @media (max-width: 450px)
     .contakts
 
         &__address
             display: none
-    menu 
-        position: fixed
-        background-color: #ff999960
-        right: 0
-        margin-top: 10px
-        top: 50px
-        z-index: 99
-        display: flex
-        align-items: center
-        justify-content: center
-        transform: translateX(%)
-    menu .link 
-        padding: 10px
-        font-size: 15px
-    .active-menu 
-        transform: translateX(%)
-    
+         
+
