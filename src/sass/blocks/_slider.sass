@@ -1,0 +1,101 @@
+.section
+    &__slider
+        margin-top: 5px
+.slider
+    position: relative
+    background-color: #ff99993b
+    box-shadow: 5px 4px 5px #999,
+.slide
+    float: left
+    max-width: 1300px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    
+    
+    &__text
+        margin: auto 17px
+        font-size: 45px
+        letter-spacing: 5px
+        color: $color-logo
+        text-align: center
+        +Great
+    &__title
+        font-size: 35px
+        +Pacifico
+        font-weight: 400
+        margin-bottom: 30px
+
+            
+
+.slide img
+    width: 40%
+
+
+.viewport 
+	width: 100%
+	display: table
+	position: relative
+	overflow: hidden
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	-o-user-select: none
+	user-select: none
+
+
+.sliderwrapper 
+	position: relative
+	left: 0
+	top: 0
+	margin: 0
+	padding: 0
+	width: calc(100%*4)
+	-webkit-transition: 1s
+	-o-transition: 1s
+	transition: 1s
+	-webkit-transition-timing-function: ease-in-out
+	-o-transition-timing-function: ease-in-out
+	transition-timing-function: ease-in-out
+
+
+// .slide 
+// 	display: flex
+// 	float: left
+
+
+// .slide img 
+// 	width: 100%
+
+
+
+.btns 
+	text-align: center
+	position: absolute
+	bottom: 10px
+	left: 50%
+	transform: translateX(-50%)
+
+.slide-nav 
+	display: inline-block
+	width: 10px
+	height: 10px
+	border-radius: 50%
+	border: 1px solid #fff
+	margin: 0 5px
+	cursor: pointer
+
+
+.active 
+	background-color: #fff
+.btn 
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+
+.btn__prev 
+	left: 0
+
+.btn__next 
+	right: 0
+
